@@ -2,6 +2,8 @@
 
 Sudoku jest łamigłówką, której celem jest wypełnienie diagramu 9 x 9 w taki sposób, aby w każdym wierszu , w każdej kolumnie i w każdym z 9 podkwadratów 3 x 3 znalazło się po jednej cyfrze od 1 do 9. 
 
+![swappy-20230331_212729](https://user-images.githubusercontent.com/94802710/229211907-45fb0cdc-b873-426f-8243-cae3fb98685e.png)
+
 Algorytm zawarty w pliku sudoku.r pozwala na jego rozwiązanie. Bazuje on na zestawie 4 warunków i przedstawieniu sudoku jako sześcianu o wymairach 9 x 9 x 9. Poszczególne wymiary odzwierciedlają położenie elementu w wierszu (i), położenie elementu w kolumnie (j) i wartość elementu (k). 
 
 ![cube](https://user-images.githubusercontent.com/94802710/229210398-68160023-6abe-4e10-b4bf-a8de651549b0.png)
