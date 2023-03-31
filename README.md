@@ -4,7 +4,7 @@ Sudoku jest łamigłówką, której celem jest wypełnienie diagramu 9 x 9 w tak
 
 Algorytm zawarty w pliku sudoku.r pozwala na jego rozwiązanie. Bazuje on na zestawie 4 warunków i przedstawieniu sudoku jako sześcianu o wymairach 9 x 9 x 9. Poszczególne wymiary odzwierciedlają położenie elementu w wierszu (i), położenie elementu w kolumnie (j) i wartość elementu (k). 
 
-![alt text](cube.png)
+![cube](https://user-images.githubusercontent.com/94802710/229210398-68160023-6abe-4e10-b4bf-a8de651549b0.png)
 
 ### Warunek 1:
 $$\sum_{k=1}^{9} x(i, j, k) = 1$$
