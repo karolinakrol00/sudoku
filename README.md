@@ -4,8 +4,6 @@ Sudoku jest łamigłówką, której celem jest wypełnienie diagramu 9 x 9 w tak
 
 Algorytm zawarty w pliku sudoku.r pozwala na jego rozwiązanie. Bazuje on na zestawie 4 warunków i przedstawieniu sudoku jako sześcianu o wymairach 9 x 9 x 9. Poszczególne wymiary odzwierciedlają położenie elementu w wierszu (i), położenie elementu w kolumnie (j) i wartość elementu (k). 
 
-   ![cube](https://user-images.githubusercontent.com/94802710/229210398-68160023-6abe-4e10-b4bf-a8de651549b0.png)
-
 ### Warunek 1:
 $$\sum_{k=1}^{9} x(i, j, k) = 1$$
 
@@ -18,9 +16,7 @@ $$\sum_{i=1}^{9} x(i, j, k) = 1$$
 ### Warunek 4:
 $$\sum_{i=1}^{3} \sum_{j=1}^{3} x(i + U, j + V , k) = 1, U, V \in \{0, 3, 6\}$$
 
-Warunki 1-3 zapewniają, że żadna z liczb nie pojawi się w kolumnie/wierszu więcej niż 1 raz. Warunek 4 gwarantuje, żadna liczba nie powtórzy się w podkwadracie 3 x 3.
-
-Algorytm generuje poszczególne warunki. Warunki te zostaną użyte podczas rozwiązywania programu liniowego. Każdy z 4 warunków generuje po 81 warunków ograniczających dla programu liniowego. Dodatkowo, każdy z elementów umieszczonych początkowo w sudoku, wprowadza jeden warunek ograniczający. Program liniowy rozwiązywany jest za pomocą funkcji 'lp' z biblioteki 'lpSolve'. Jako wynik działania algorytmu zwracane jest rozwiązane sudoku.
+Warunki 1-3 zapewniają, że żadna z liczb nie pojawi się w kolumnie/wierszu więcej niż 1 raz. Warunek 4 gwarantuje, żadna liczba nie powtórzy się w podkwadracie 3 x 3. Algorytm generuje poszczególne warunki. Warunki te zostaną użyte podczas rozwiązywania programu liniowego. Każdy z 4 warunków generuje po 81 warunków ograniczających dla programu liniowego. Dodatkowo, każdy z elementów umieszczonych początkowo w sudoku, wprowadza jeden warunek ograniczający. Program liniowy rozwiązywany jest za pomocą funkcji 'lp' z biblioteki 'lpSolve'. Jako wynik działania algorytmu zwracane jest rozwiązane sudoku.
 
 ### Przykład 1
 ![swappy-20230401_171604](https://user-images.githubusercontent.com/94802710/229297781-4e0941a7-c3ce-4cf8-a1a9-2cadf70f8a50.png) ---->
